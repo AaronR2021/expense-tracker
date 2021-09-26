@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.box{
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+.history{
+  border-bottom: 1px solid black;
+  display:block;
+  width: 100%;
+  padding: 5px;
+}
+.flexbox-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.income-box{
+display:grid;
+place-items: center;
+flex: 1;
+}
+.expense-box{
+  display:grid;
+  place-items: center;
+  flex: 1;
+}
+.space-none{
+  margin: 0;
+}
+.income{
+  color: green;
+  font-weight: 700;
+}
+.expense{
+  color: red;
+  font-weight: 700;
+}
+.delete-btn{
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 10px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  border-radius:5px ;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+li:hover .delete-btn{
+  opacity: 1;
+
+}
+li{
+  list-style-type: none;
+  padding: 10px;
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.plus{
+  background-color: white;
+  border-right: 5px solid #2ecc71;
+}
+.minus{
+  background-color: white;
+  border-right: 5px solid #c0392b;
+}
+.list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.newTransaction{
+  box-sizing: border-box;
+}
+.li-list{
+margin-top: 20px;
+font-size: 1.4rem;
+  width: 100%;
+}
+form{
+  
 }
